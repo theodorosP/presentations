@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{Computational Details}{4}{0}{2}
+\beamer@sectionintoc {3}{Configurations}{5}{0}{3}
+\beamer@subsectionintoc {3}{1}{CO2 configurations}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{CO2/Bi(111) configurations}{6}{0}{3}
+\beamer@subsectionintoc {3}{3}{COOH/Bi(111) configurations}{9}{0}{3}
+\beamer@subsectionintoc {3}{4}{CO2 + NH4$^{+}$/Bi(111)}{10}{0}{3}
+\beamer@sectionintoc {4}{Next Steps}{12}{0}{4}

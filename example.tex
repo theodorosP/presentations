@@ -1,0 +1,250 @@
+\documentclass{beamer}
+\usetheme{PegasusUCF}
+\setbeamertemplate{caption}[numbered]
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+%-------------------------------
+\title[UCF Departmet of Physics]{CO2/Bi(111)}
+\author{Theodoros E. Panagiotakopoulos}
+%>>>>UNCOMMENT 1 FOR YOUR DEPTARTMENT
+%\newcommand{\deptname}{0}
+%\newcommand{\deptname}{1}%STATISTICS
+%\newcommand{\deptname}{2}%MATHEMATICS
+%\newcommand{\deptname}{3}%ENGINEERING AND COMPUTER SCIENCE
+%\newcommand{\deptname}{4}%ELECTRICAL ENGINEERING AND COMPUTER ENGINEERING
+%\newcommand{\deptname}{5}%IST INSTITUTE FOR SIMULATION AND TRAINING
+\newcommand{\deptname}{6}%PHYSICS
+%\newcommand{\deptname}{7}%MECHANICAL AND AEROSPACE ENGINEERING
+%\newcommand{\deptname}{8}%COMPLEX ADAPTIVE SYSTEMS LABORATORY
+%\newcommand{\deptname}{9}%CENTER FOR ADVANCED TRANSPORTATION SYSTEMS SIMULATION
+%\newcommand{\deptname}{10}%CHEMISTRY
+%\newcommand{\deptname}{11}%BIOLOGY
+%\newcommand{\deptname}{12}%ECONOMICS
+%\newcommand{\deptname}{13}%SOCIOLOGY
+%\newcommand{\deptname}{14}%PSYCHOLOGY
+%\newcommand{\deptname}{15}%BUSINESS AND ADMINISTRATION
+%\newcommand{\deptname}{16}%COLLEGE OF SCIENCES
+
+%<<<<<
+\date{\vspace{-8cm}}
+
+%--------------------------------
+
+
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+\tableofcontents
+\end{frame}
+
+\section{Motivation}
+
+\begin{frame}{Motivation} 
+  \begin{block}{(CO2) emissions}
+    \begin{itemize}
+    \item The world watches out for carbon dioxide (CO2) emissions. The excess gas is the main cause of global warming due to the greenhouse effect.
+    \end{itemize}
+  \end{block}
+  \begin{center}
+    \includegraphics[scale=0.4]{co2.png}
+    \footnote{ U.S. NOAA (National Oceanic and Atmospheric Administration)}
+  \end{center}
+\end{frame}
+
+
+\section{Computational Details}
+\begin{frame}{Computational Details} 
+  \begin{block}{Input paremeters}
+    \begin{itemize}
+    \item DFT, employing the projector-augmented wave (PAW) and the plane-wave  basis set
+    \item PBE exchange correlation function
+\item Kinetic energy cut-off: 500 eV
+\item Electronic convergence threshold: $10^{-6}$ eV
+\item Supercell: 6x6x6 Bi(111) slab,
+	\begin{enumerate}
+		\item CO2 atoms on both sides
+		\item Vacuum of 15 
+	(For 1 ML Pb coverage: 216 Bi, 2 C, 4 O)
+	\end{enumerate}		
+\item Kpoint mesh: (1x1x1) for relaxation 
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\section{Configurations}
+\subsection{CO2 configurations}
+\begin{frame}{CO2 configurations} 
+  \begin{block}{CO2}
+    \begin{itemize}
+    \item There are two configurations for CO2:
+	\begin{enumerate}
+	\item Two oxygen atoms up
+	\item Two oxygen atoms down
+	\end{enumerate}	    
+    \end{itemize}
+  \end{block}
+\begin{columns}[onlytextwidth]
+\begin{column}{.45\textwidth}
+\begin{figure}
+  \includegraphics[scale = 0.4]{conf1.png}
+  \caption{First configuration}
+\end{figure}
+\end{column}
+\hfill
+\begin{column}{.45\textwidth}
+\begin{figure}
+  \includegraphics[scale = 0.4]{conf2.png}
+  \caption{Second configuration}
+\end{figure}
+\end{column}
+\end{columns}
+\begin{center}
+Absorb the two configurations of CO2 on Bi(111)
+\includegraphics[scale=0.12]{bi_111.png}
+\end{center}
+\end{frame}
+
+
+
+\subsection{CO2/Bi(111) configurations}
+\begin{frame}{CO2/Bi(111) configurations}
+\begin{columns}[onlytextwidth]
+\begin{column}{.45\textwidth}
+\begin{figure}
+  \includegraphics[scale = 0.1]{first_conf.png}
+  \caption{First configuration}
+\end{figure}
+\end{column}
+\hfill
+\begin{column}{.45\textwidth}
+\begin{figure}
+  \includegraphics[scale = 0.1]{second_conf.png}
+  \caption{Second configuration}
+\end{figure}
+\end{column}
+\end{columns}
+\begin{block}{CO2/Bi(111) absorbtion}
+\begin{itemize}
+\item Calculations were pefromed for 0, 2 and 4 electrons 
+\item It seems that CO2 is not being on Bi(111) 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{CO2/Bi(111) configurations}
+\begin{block}{Why charge?}
+\begin{itemize}
+\item CO2 is stable molecule and hard to adsorb on anything
+\item Adsorption happens only if it forms a v shape configuration
+\item This can happen only if CO2 receive electron to its $\pi$ antibonding orbital
+\item So charging the surface increase the amount of electron transferring to pi* orbital
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}{CO2/Bi(111) configurations}
+\begin{block}{CO2}
+	\begin{itemize}
+	\item CO2 could not be absorbed on the surface
+	\item two configurations of COOH used
+	\item COOH may be absorbed on Bi(111)\cite{oh2018atomic} so H will then be removed
+	\end{itemize}
+	\end{block}
+	\begin{columns}[onlytextwidth]
+\begin{column}{.45\textwidth}
+\begin{figure}
+  \includegraphics[scale = 0.4]{conf3.png}
+  \caption{First configuration}
+\end{figure}
+\end{column}
+\hfill
+\begin{column}{.45\textwidth}
+\begin{figure}
+  \includegraphics[scale = 0.4]{conf4.png}
+  \caption{Second configuration}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\subsection{COOH/Bi(111) configurations}
+\begin{frame}{COOH/Bi(111) configurations}
+\begin{block}{COOH}
+\begin{itemize}
+\item Calculations were pefromed for 0, 2 and 4 electrons 
+\item We were able to absorb COOH on Bi(111)
+\end{itemize}
+\end{block}
+\begin{figure}
+  \includegraphics[scale=0.2]{COOH_conf1.png}
+  \caption{COOH absorbed on Bi(111)}
+\end{figure}
+
+\begin{block}{}
+\begin{itemize}
+\item Next we remove H and we add cat-ion NH4$^{+}$
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\subsection{CO2 + NH4$^{+}$/Bi(111)}
+\begin{frame}{CO2 + NH4$^{+}$/Bi(111)}
+\begin{block}{CO2 + NH4$^{+}$/Bi(111)}
+\begin{itemize}
+\item After trying many configurations finally we get the one where CO2 stays bended on Bi(111)
+\item Calculations were performed 1, 3 and -1 electrons
+\item C was initially constrined
+\item after relaxation, constraints were removed and new relaxation calculations performed
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}{CO2 + NH4$^{+}$/Bi(111)}
+\begin{block}{CO2 + NH4$^{+}$/Bi(111)}
+\begin{itemize}
+\item CO2 is bended for calculations with 1 e\textsuperscript{-} added since this number gives aproximately the potential of -1 eV used in experiments
+\end{itemize}
+\end{block}
+\begin{figure}
+\includegraphics[scale=0.2]{nh4.png}
+\caption{CO2 \& NH4$^{+}$/Bi(111) after relaxation}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\section{Next Steps}
+\begin{frame}{Next Steps}
+\begin{block}{Next Steps}
+\begin{itemize}
+\item Target potential calculations are running for NH4\textsuperscript{+} directly above C atoms
+\item NH4\textsuperscript{+} will be removed and see if CO2 stays bended by setting the target potential equal to -1 eV
+\item Use H\textsubscript{2}O  instead of NH4\textsuperscript{+} and check if we can use H\textsubscript{2}O instead
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{References}
+\bibliographystyle{unsrt}
+\bibliography{mybib}
+\end{frame}
+
+\end{document}
